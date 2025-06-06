@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertBanner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:visibility="gone"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alertText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="ALERTA!" />
+
+        <TextView
+            android:id="@+id/alertIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:text="1/2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSilenceAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silenciar"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black" />
+</LinearLayout>

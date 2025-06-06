@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorSafeZone">#4CAF50</color>
+    <color name="colorDangerZone">#F44336</color>
+    <color name="darkGray">#222222</color>
+    <color name="red">#CF3030</color>
+    <color name="green">#30CF30</color>
+
+    <color name="safe_zone_alert">#FF5252</color>
+    <color name="danger_zone_alert">#D50000</color>
+    <color name="normal_background_start">#F1F6FF</color>
+    <color name="normal_background_end">#E4ECFD</color>
+    <color name="alert_background_start">#FFEBEB</color>
+    <color name="alert_background_end">#FFDCDC</color>
+    <color name="danger_background_start">#FFCCCC</color>
+    <color name="danger_background_end">#FFB3B3</color>
+
+    <color name="alert_color_deuteranopia">#F6DB35</color>
+    <color name="danger_color_deuteranopia">#CC79A7</color>
+
+    <color name="alert_color_protanopia">#FFD700</color>
+    <color name="danger_color_protanopia">#CC79A7</color>
+
+    <color name="alert_color_tritanopia">#FF6347</color>
+    <color name="danger_color_tritanopia">#8B0000</color>
+
+
+    <color name="alert_color">#FFA500</color>
+    <color name="danger_color">#FF0000</color>
+
+    <color name="text_color_normal">#0D3E43</color>
+    <color name="text_color_alert">#D35400</color>
+    <color name="text_color_danger">#C0392B</color>
+</resources>

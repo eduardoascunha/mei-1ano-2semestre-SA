@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaredDetailActivity">
+
+    <include
+        android:id="@+id/alertBanner"
+        layout="@layout/alert_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Voltar"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#0D3E43" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvCaredName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:textColor="#0D3E43"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMonitorLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button"
+                android:text="Monitorizar Localização"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/tvCaredName" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageGeofences"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:text="Gerir Zonas"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btnMonitorLocation" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageNavigate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:text="Definir Rotas Seguras"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btnManageGeofences" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAccessCamera"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:text="Aceder Câmera"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btnManageNavigate" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:text="Histórico de Percursos"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btnAccessCamera" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHistoryLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:text="Histórico Localização"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btnHistory" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

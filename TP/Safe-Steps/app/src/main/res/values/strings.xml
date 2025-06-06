@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SafeSteps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+    <!-- Login e Registro -->
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="register">Registrar</string>
+    <string name="name">Nome</string>
+    <string name="phone">Telefone</string>
+    <string name="no_account_register">Não tem conta? Registre-se</string>
+    <string name="have_account_login">Já tem conta? Faça login</string>
+    <string name="user_type">Tipo de usuário</string>
+    <string name="caregiver">Cuidador</string>
+    <string name="cared">A ser cuidado</string>
+
+    <!-- Mensagens -->
+    <string name="registration_success">Registro realizado com sucesso!</string>
+    <string name="login_success">Login realizado com sucesso!</string>
+    <string name="error_occurred">Ocorreu um erro. Tente novamente.</string>
+    <string name="fill_all_fields">Por favor, preencha todos os campos.</string>
+    <string name="select_user_type">Por favor, selecione o tipo de usuário.</string>
+    <string name="welcome_to_safesteps">Welcome To SafeSteps\n</string>
+    <string name="how_will_you_use_app">How Will You Use This APP</string>
+    <string name="title_activity_caregiver_navigate">CaregiverNavigateActivity</string>
+    <string name="title_activity_caregiver_navigation">CaregiverNavigationActivity</string>
+
+</resources>
